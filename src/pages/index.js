@@ -1,3 +1,9 @@
 import React from "react"
 
-export default () => <div>Hello world!</div>
+const Home = props => {
+    return (
+        <div>Hello Gats!</div>
+    )
+}
+
+export default Home;
