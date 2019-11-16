@@ -12,7 +12,7 @@ import {
     DefaultParagraph
 } from '../styles';
 
-const Home = ({ data }) => {
+const BlogPosts = ({ data }) => {
     //console.log(data)
     const countTitle = parseInt(data.allMarkdownRemark.totalCount) === 1 ?
     "Post" :
@@ -41,7 +41,7 @@ const Home = ({ data }) => {
     )
 }
 
-Home.propTypes = {
+BlogPosts.propTypes = {
     data: PropTypes.object.isRequired
 }
 
@@ -63,4 +63,4 @@ export const query = graphql`
     }
 `
 
-export default Home;
+export default BlogPosts;
